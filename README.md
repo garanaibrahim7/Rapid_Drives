@@ -71,15 +71,15 @@ rapid-drives/
 │
 │
 └── Database/
-    └── rapid_drives.sql      # Database Schema
+    └── rapiddb.sql      # Database Schema
 ```
 
 ## 🚀 Installation & Setup
 
 ### 1. Database Setup
 ```sql
-CREATE DATABASE rapid_drives;
-USE rapid_drives;
+CREATE DATABASE rapiddb;
+USE rapiddb;
 -- Import the provided SQL schema file
 ```
 
@@ -87,7 +87,7 @@ USE rapid_drives;
 Update database connection in `DatabaseConnection.java`:
 ```java
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/rapid_drives";
+    private static final String URL = "jdbc:mysql://localhost:3306/rapiddb";
     private static final String USERNAME = "your_username";
     private static final String PASSWORD = "your_password";
 }
